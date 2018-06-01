@@ -2,7 +2,7 @@
 This generates an URL that can be pasted in a browser to obtain json file of elevations of different locations as defined
 by a grid of which the N, S, E, W corners are given.
 
-Google Maps Path: https://maps.googleapis.com/maps/api/elevation/json?locations=-33.941033,18.457269|-34.075809,18.296103&key=AIzaSyDkVBeSmR4wP1YpC7weGvIbvJnLsXyTE_Y
+Google Maps Path: https://maps.googleapis.com/maps/api/elevation/json?locations=-33.941033,18.457269|-34.075809,18.296103&key=
 '''
 
 
@@ -26,7 +26,7 @@ def CreateGrid_aslist(N,S,W,E,size=19):
 
 def genURL(listCoord):
     prefix = 'https://maps.googleapis.com/maps/api/elevation/json?locations='
-    suffix = '&key=AIzaSyDkVBeSmR4wP1YpC7weGvIbvJnLsXyTE_Y'
+    suffix = '&key='
     #from list to single string seperated by |
     locations = '|'.join(listCoord)
 
